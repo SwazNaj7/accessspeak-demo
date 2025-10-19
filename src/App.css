@@ -1,0 +1,70 @@
+/* App.css - Clean Minimalist Design */
+.app {
+  min-height: 100vh;
+  background: #ffffff;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.app.high-contrast {
+  background: #000;
+  color: #fff;
+}
+
+.app.large-text {
+  font-size: 1.2em;
+}
+
+.main-content {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-left: 260px;
+  background: #ffffff;
+  min-height: calc(100vh - 100px);
+}
+
+/* High contrast mode */
+.high-contrast .main-content {
+  background: #000;
+  color: #fff;
+}
+
+.high-contrast button {
+  background: #fff;
+  color: #000;
+  border: 2px solid #fff;
+}
+
+.high-contrast input,
+.high-contrast textarea,
+.high-contrast select {
+  background: #000;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+/* Large text mode */
+.large-text h1 { font-size: 2.5em; }
+.large-text h2 { font-size: 2em; }
+.large-text h3 { font-size: 1.8em; }
+.large-text h4 { font-size: 1.5em; }
+.large-text p { font-size: 1.2em; }
+.large-text button { font-size: 1.1em; padding: 12px 24px; }
+.large-text input,
+.large-text textarea,
+.large-text select { font-size: 1.1em; padding: 12px; }
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .main-content {
+    margin-left: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 20px 15px;
+    margin-left: 0;
+    padding-bottom: 80px;
+  }
+}

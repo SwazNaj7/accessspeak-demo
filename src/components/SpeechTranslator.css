@@ -1,0 +1,199 @@
+/* SpeechTranslator.css - Clean Minimalist Design */
+.speech-translator {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  border: 1px solid #e8e8e8;
+}
+
+.speech-translator h2 {
+  color: #2c3e50;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+.speech-controls {
+  margin-bottom: 30px;
+}
+
+.text-area {
+  margin-bottom: 20px;
+}
+
+.text-area textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #e8e8e8;
+  border-radius: 8px;
+  font-size: 1em;
+  resize: vertical;
+  min-height: 120px;
+  font-family: 'Quicksand', sans-serif;
+  background: #ffffff;
+  color: #2c3e50;
+}
+
+.text-area textarea:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.control-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.control-buttons button {
+  padding: 12px 24px;
+  border: 2px solid #3498db;
+  border-radius: 6px;
+  font-size: 0.9em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 140px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.listen-btn {
+  background: #3498db;
+  color: white;
+}
+
+.listen-btn:hover {
+  background: #2980b9;
+  transform: translateY(-1px);
+}
+
+.listen-btn.listening {
+  background: #e74c3c;
+  border-color: #e74c3c;
+  animation: pulse 1.5s infinite;
+}
+
+.speak-btn {
+  background: #27ae60;
+  color: white;
+  border-color: #27ae60;
+}
+
+.speak-btn:hover {
+  background: #229954;
+  transform: translateY(-1px);
+}
+
+.speak-btn.speaking {
+  background: #16a085;
+  border-color: #16a085;
+  animation: pulse 1.5s infinite;
+}
+
+.save-btn {
+  background: #9b59b6;
+  color: white;
+  border-color: #9b59b6;
+}
+
+.save-btn:hover {
+  background: #8e44ad;
+  transform: translateY(-1px);
+}
+
+.save-btn:disabled {
+  background: #bdc3c7;
+  border-color: #bdc3c7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.saved-phrases {
+  margin-top: 30px;
+}
+
+.saved-phrases h3 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.phrases-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.phrase-btn {
+  background: #f8f9fa;
+  border: 2px solid #e8e8e8;
+  border-radius: 6px;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.9em;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  color: #2c3e50;
+}
+
+.phrase-btn:hover {
+  background: #e9ecef;
+  border-color: #3498db;
+  transform: translateY(-1px);
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}
+
+.high-contrast .speech-translator {
+  background: #000;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.high-contrast .speech-translator h2,
+.high-contrast .speech-translator h3 {
+  color: #fff;
+}
+
+.high-contrast .text-area textarea {
+  background: #000;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.high-contrast .phrase-btn {
+  background: #000;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+@media (max-width: 768px) {
+  .speech-translator {
+    padding: 20px;
+    margin: 10px 0;
+  }
+  
+  .control-buttons {
+    flex-direction: column;
+  }
+  
+  .control-buttons button {
+    min-width: auto;
+  }
+  
+  .phrases-grid {
+    grid-template-columns: 1fr;
+  }
+}
