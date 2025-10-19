@@ -1,4 +1,4 @@
-# EnSync Demo
+# EnSync Demo - by NJ²
 
 **"Speak, Move, Stay EnSync"**
 
@@ -10,23 +10,26 @@ This is a minimum viable product (MVP) demonstration of EnSync, showcasing core 
 
 ## ✨ Key Features Demonstrated
 
+### ♿ Accessibility Map
+- **Interactive Map**: Visual representation of accessible locations
+- **Accessibility Features**: Display ramps, elevators, accessible restrooms, parking
+- **Community Reviews**: User-generated accessibility ratings and reviews
+- **Location Details**: Comprehensive accessibility information for each venue
+  
 ### 🗣️ Speech & Text Communication
 - **Speech-to-Text**: Convert spoken words to text for deaf/hard-of-hearing users
 - **Text-to-Speech**: Convert text to speech for users with speech impairments
 - **Saved Phrases**: Quick access to frequently used phrases
 - **Real-time Translation**: Instant conversion between speech and text
 
-### ♿ Accessibility Map
-- **Interactive Map**: Visual representation of accessible locations
-- **Accessibility Features**: Display ramps, elevators, accessible restrooms, parking
-- **Community Reviews**: User-generated accessibility ratings and reviews
-- **Location Details**: Comprehensive accessibility information for each venue
-
 ### 🤟 Sign Language Translator
 - **Text-to-Sign**: Convert text to sign language animations
 - **Sign Library**: Common signs with visual demonstrations
 - **Learning Resources**: Tips and resources for sign language learning
 - **Interactive Learning**: Practice with common phrases
+  
+### 🎯Task Function 
+- **Request assistance in daily struggles/day to day tasks(helping hand )
 
 ### 👥 Community Reviews
 - **User Reviews**: Share accessibility experiences
