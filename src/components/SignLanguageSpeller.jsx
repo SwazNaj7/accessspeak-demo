@@ -233,27 +233,14 @@ function SignLanguageSpeller() {
                 className="start-btn"
                 disabled={!apiConnected}
               >
-                🐍 Start Python Recognition
+                Start Recognition
               </button>
             ) : (
               <button onClick={stopRecording} className="stop-btn">
                 ⏹️ Stop Recognition
               </button>
             )}
-            
-            <button onClick={testApiConnection} className="test-btn">
-              🔄 Test Connection
-            </button>
-            
-            <div className="debug-info">
-              <small>
-                Video: {videoReady ? '✅' : '❌'} | 
-                Python API: {apiConnected ? '✅' : '❌'} | 
-                Processing: {isRecording ? '✅' : '❌'}
-              </small>
-              <br />
-              <small className="debug-text">{debugInfo}</small>
-            </div>
+          
           </div>
         </div>
 
@@ -322,37 +309,12 @@ function SignLanguageSpeller() {
         </div>
       </div>
 
-      <div className="instructions">
-        <h3>How to Use</h3>
-        <div className="instruction-list">
-          <div className="instruction">
-            <strong>1. Start Python API:</strong> Run your Python service on port 5001
-          </div>
-          <div className="instruction">
-            <strong>2. Test Connection:</strong> Click "Test Connection" to verify API is running
-          </div>
-          <div className="instruction">
-            <strong>3. Start Recognition:</strong> Click "Start Python Recognition" to begin
-          </div>
-          <div className="instruction">
-            <strong>4. Sign Letters:</strong> Make sign language gestures for individual letters
-          </div>
-        </div>
-      </div>
-
       {error && (
         <div className="error-message">
           <span>⚠️ {error}</span>
         </div>
       )}
 
-      <div className="service-status">
-        <h4>Service Status</h4>
-        <p>🐍 Python API: {apiConnected ? 'Connected' : 'Not Connected'}</p>
-        <p>📹 Camera: {videoReady ? 'Ready' : 'Not Ready'}</p>
-        <p>🔄 Processing: {isRecording ? 'Active' : 'Stopped'}</p>
-        <p>💡 Make sure to run: <code>python sign_language_simple.py</code></p>
-      </div>
     </div>
   )
 }

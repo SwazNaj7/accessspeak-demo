@@ -4,16 +4,16 @@ import './Navigation.css'
 
 function Navigation() {
   const navItems = [
-    { id: 'dashboard', label: 'Dashboard', path: '/' },
-    { id: 'communication', label: 'Communication', path: '/communication' },
-    { id: 'sign-speller', label: 'Sign Speller', path: '/speller' },
-    { id: 'map', label: 'Map', path: '/map' },
-    { id: 'learning', label: 'Learning', path: '/learning' },
-    { id: 'community', label: 'Community', path: '/community' },
-    { id: 'ai-assistant', label: 'AI Assistant', path: '/ai-assistant' },
-    { id: 'wellness', label: 'Wellness', path: '/wellness' },
-    { id: 'emergency', label: 'Emergency', path: '/emergency' },
-    { id: 'settings', label: 'Settings', path: '/settings' }
+    { id: 'dashboard', label: 'Dashboard', path: '/', icon: '🏠' },
+    { id: 'communication', label: 'Communication', path: '/communication', icon: '💬' },
+    { id: 'sign-speller', label: 'Sign Speller', path: '/speller', icon: '✋' },
+    { id: 'map', label: 'Map', path: '/map', icon: '🗺️' },
+    { id: 'learning', label: 'Learning', path: '/learning', icon: '🎓' },
+    { id: 'community', label: 'Community', path: '/community', icon: '🤝' },
+    { id: 'ai-assistant', label: 'AI Assistant', path: '/ai-assistant', icon: '🤖' },
+    { id: 'wellness', label: 'Wellness', path: '/wellness', icon: '💪' },
+    { id: 'emergency', label: 'Emergency', path: '/emergency', icon: '🚨' },
+    { id: 'settings', label: 'Settings', path: '/settings', icon: '⚙️' }
   ]
 
   return (
@@ -27,7 +27,8 @@ function Navigation() {
                 className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
                 aria-label={item.label}
               >
-                {item.label}
+                <span className="nav-icon">{item.icon}</span>
+                <span className="nav-label">{item.label}</span>
               </NavLink>
             </li>
           ))}

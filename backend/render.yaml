@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: ensync-backend
+    env: python
+    region: oregon
+    plan: free
+    branch: main
+    buildCommand: pip install -r requirements.txt
+    startCommand: python sign_language_enhanced.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.0
+      - key: PORT
+        value: 5001
+      - key: FLASK_ENV
+        value: production
